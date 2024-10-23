@@ -1,0 +1,228 @@
+:root {
+  --bg--clr: hsla(240, 50%, 6%, 1);
+  --titleClr: hsla(29, 79%, 63%, 1);
+  --textClr: hsla(29, 89%, 90%, 1);
+  --textareaBGClr: hsla(29, 0%, 10%, 0.6);
+}
+
+@font-face {
+  font-family: cascadia-code;
+  src: url(./assets/cascadia-code/Cascadia.ttf);
+}
+
+@font-face {
+  font-family: cera;
+  src: url(/assets/cera-round-pro-free-font/Demo_fonts/Fontspring-DEMO-ceraroundpro-regular.otf);
+}
+
+/* Configuration start here */
+*,
+*::after,
+*::before {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  font-family: cera;
+  font-size: 16px;
+  outline: none;
+}
+
+.process--opt,
+.counter--subCon {
+  width: 650px;
+  height: auto;
+  margin: 0 auto;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  background: var(--bg--clr);
+  color: var(--textClr);
+  padding: 4rem 5rem;
+}
+
+select {
+  width: 100%;
+  padding: 0.4rem 1.5rem 0.4rem 0.5rem;
+  display: block;
+  appearance: none;
+  background-color: transparent;
+  color: var(--textClr);
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  border: none;
+}
+
+
+
+button {
+  text-transform: capitalize;
+  padding: 0.8rem 1rem;
+  letter-spacing: 3px;
+  font-weight: 500;
+  color: var(--titleClr);
+  background-color: var(--textareaBGClr);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+/* Configuration end here */
+h1 {
+  font-family: cera;
+  font-size: 40px;
+  line-height: 3rem;
+  font-weight: 700;
+  text-transform: capitalize;
+  letter-spacing: 3px;
+  color: var(--titleClr);
+  text-stroke: 4px var(--titleClr);
+  -webkit-text-stroke: 3px var(--titleClr);
+}
+
+p {
+  text-align: center;
+  padding: 0 11rem;
+  margin: 1rem;
+  line-height: 25px;
+  word-wrap: break-word;
+}
+
+#description--con {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  width: 100%;
+  /* border: 2px solid red; */
+
+  line-height: 1.4rem;
+}
+
+.dev--web--visit {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.5rem 1rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.dev--web--visit > a {
+  color: var(--titleClr);
+  text-decoration: none;
+}
+
+.dev--prof--con {
+  width: 35px;
+  height: 35px;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.dev--prof--con > img {
+  display: inline-block;
+  height: 130%;
+  width: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+
+#counter--con {
+  padding: 3rem 0;
+}
+
+.counter--subCon {
+  border-radius: 5px;
+}
+
+.counter--subCon > textarea {
+  border-radius: 8px;
+  display: block;
+  width: 100%;
+  height: 100%;
+  resize: none;
+  background: var(--textareaBGClr);
+  color: white;
+  padding: 1.3rem;
+  font-size: 14px;
+  border: none;
+  color: var(--textClr);
+}
+
+textarea::placeholder {
+  color: hsla(29, 15%, 35%, 1);
+  font-weight: 500;
+}
+
+textarea:focus {
+  outline: none;
+  box-shadow: 0 0px 0px 1px hsla(29, 79%, 63%, 1);
+}
+
+.counter--output--result {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1rem 0;
+  padding: 1.3rem;
+  background-color: var(--textareaBGClr);
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  border-radius: 8px;
+}
+
+.selects--con {
+  width: 150px;
+  display: block;
+  position: relative;
+  border: 1px solid var(--textClr);
+  border-radius: 2px;
+}
+select {
+  appearance: none;
+}
+#count--selects {
+  border: none;
+  background-color: var(--bg--clr);
+}
+
+.selects--con::after {
+  content: "\2193";
+  color: hsla(29, 79%, 89%, 1);
+  position: absolute;
+  top: 2px;
+  right: 5px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.process--opt {
+  line-height: 2.5rem;
+}
+
+
+@media screen and (max-width:800px) {
+  p{
+    padding: 0 1rem;
+  }
+}
+@media screen and (max-width:500px) {
+body{
+   padding: 4rem 1rem;
+}
+.counter--subCon{
+  width: 100%;
+}
+.process--opt,
+.counter--subCon {
+  /* border: 2px solid red; */
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+}

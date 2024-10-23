@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WordAndCharacterCounter</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="codes.js" defer></script>
+  </head>
+  <body>
+    <section id="description--con">
+      <h1>wordify</h1>
+      <p>
+        Wordify is a small JavaScript utility that makes character and word
+        counts simple. Whether you are writing essays, tweets, or emails.
+        Wordify simple UI and instantaneous feedback make it simple to keep
+        track of the length of your content. You may view the word and character
+        counts right away by just pasting your content. Use Wordify to refine
+        your text and stay within restrictions right now.
+      </p>
+      <button class="dev--web--visit">
+        <a href="https://jasonoluseyi.netlify.app/" target="_blank" 
+          >see more of my projects</a
+        >
+        <div class="dev--prof--con"><img src="./assets/images/jason.jpeg" alt="" class="dev--pic"></div>
+      </button>
+    </section>
+    <section id="counter--con">
+      <div class="counter--subCon">
+        <textarea
+          name="textBox"
+          id="text--box"
+          cols="30"
+          rows="12"
+          placeholder="Type or paste your text here"
+        ></textarea>
+
+        <div class="counter--output--result">
+          <div class="selects--con">
+            <select
+              name="count--selects"
+              id="count--selects"
+              title="click on the box to select which operation to be perform on your texts"
+            >
+              <option value="click here" selected>click here</option>
+              <option value="words">word</option>
+              <option value="characters">character</option>
+            </select>
+          </div>
+          <div class="counter--result">No action selected</div>
+        </div>
+      </div>
+      <div class="process--opt">
+        <button type="button" class="submit">submit</button>
+      </div>
+    </section>
+  </body>
+</html>
