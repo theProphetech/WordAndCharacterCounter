@@ -24,7 +24,8 @@ const validateOptions = function (selectHtmlElement) {
       regex = /[^\s]/gi; // Here i am extracting my character
       // console.log(userInput.match(regex));
       let charLength = userInput.match(regex).join("").length;
-      /* check if the regex matched with the user input if yes wejoin and look for the length straight ahead */
+      /* check if the regex matched with the user input if yes we join and 
+      look for the length straight ahead */
       totalCount.style.color = "hsla(29, 79%, 63%, 1)";
       return (totalCount.textContent = `Total Character Count:${charLength}`);
     }
@@ -37,6 +38,7 @@ const validateOptions = function (selectHtmlElement) {
       regex = /\w+/gi;
       //   console.log(userInput.match(regex));
       let wordsLength = userInput.match(regex).length;
+      console.log(wordsLength);
       totalCount.style.color = "hsla(29, 79%, 63%, 1)";
       return (totalCount.textContent = `Total Word Count:${wordsLength}`);
     }
